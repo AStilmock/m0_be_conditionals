@@ -53,21 +53,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+# Running the comparison "Is the number 4 less than the number 9" this prints "true"
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# Running the comparison "Is the number 4 less than the value of the array 'books' which is 3" returns "false"
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# Running the comparion "is the value of the array 'friends' less than the value of the array 'siblings'" returns "true"
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# Running the comparison "Is the value of 'attendees' not equal to the value of 'meals'" returns true
 
 
 #-------------------
@@ -80,8 +80,10 @@ finished_homework = false
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
 puts is_hungry && finished_homework
+# Returns fals
 # Determine if the user is hungry or has completed their homework
 puts is_hungry || finished_homework
+# Returns true
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,15 +92,23 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
+puts loves_to_play && loves_treats
+# Returns true
 
 
 # Determine if the dog loves to play and loves the dog park
+puts loves_to_play && loves_dog_park
+# Returns false
 
 
 # Determine if the dog loves to play or loves the dog park
+puts loves_to_play || loves_dog_park
+#Returns true
 
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && is_puppy
+
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: Returned an error as the age for what makes the dog a puppy is not defined 
